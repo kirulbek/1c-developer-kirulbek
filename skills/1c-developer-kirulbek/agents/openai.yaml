@@ -1,0 +1,14 @@
+interface:
+  display_name: "1C Developer (Kirulbek)"
+  short_description: "Разработка 1С, отладка, проекты и история задач"
+  default_prompt: "Используй $1c-developer-kirulbek и покажи /меню."
+policy:
+  allow_implicit_invocation: true
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "onec_help"
+      description: "Справка платформы и языка запросов 1С"
+    - type: "mcp"
+      value: "onec_bsl"
+      description: "Статическая диагностика кода BSL"
